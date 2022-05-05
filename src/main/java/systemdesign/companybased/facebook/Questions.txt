@@ -1,0 +1,382 @@
+Write a function to return the number of times a character appears in a string. The character can be the empty string.
+Complete a function that returns a list containing mismatched words in two strings. The return list can be in any order. I used set to solve this question, but was also asked to verbally explain how I would solve it without using sets.
+Given an array containing None values, fill in the array with the most recent None value. If the list starts with None, then don't do anything to it.
+Given a dictionary, print the key for nth highest value present in the dict. If there are more than 1 record present for nth highest value then sort
+the key and print the first one (alphabetically). N can be higher than the number of elements in the dictionary.
+Given a list of ints, balance the list so that each int appears equally in the list. Return a dictionary where the key is the int and the value is the count needed to balance the list.
+
+[1, 1, 2] => {2: 1}
+[1, 1, 1, 5, 3, 2, 2] => {5: 2, 3: 2, 2: 1}
+9 Answers
+What percent of all products in the grocery chain's catalog are both low fat and recyclable?
+What are the top five (ranked in decreasing order) single-channel media types that correspond to the most money the grocery chain had spent on its promotional campaigns? media_type can contain mutliple values seperated by a comma, so single channel is when media_type only has one value.
+Percent of sales that had a valid promotion, the VP of marketing wants to know what percent of transactions occur on either the very first day or the very last day of a promotion campaign.
+Answer Question
+Write a query that returns product_family, units_sold, percentage of promoted.
+Write a query that returns percentage of unsold product_category.
+Table:
+searches
+Columns:
+date STRING date of the search,
+search_id INT the unique identifier of each search,
+user_id INT the unique identifier of the searcher,
+age_group STRING ('<30', '30-50', '50+'),
+search_query STRING the text of the search query
+
+Sample Rows:
+date | search_id | user_id | age_group | search_query
+--------------------------------------------------------------------
+'2020-01-01' | 101 | 9991 | '<30' | 'justin bieber'
+'2020-01-01' | 102 | 9991 | '<30' | 'menlo park'
+'2020-01-01' | 103 | 5555 | '30-50' | 'john'
+'2020-01-01' | 104 | 1234 | '50+' | 'funny cats'
+
+
+Table:
+search_results
+Columns:
+date STRING date of the search action,
+search_id INT the unique identifier of each search,
+result_id INT the unique identifier of the result,
+result_type STRING (page, event, group, person, post, etc.),
+clicked BOOLEAN did the user click on the result?
+
+Sample Rows:
+date | search_id | result_id | result_type | clicked
+--------------------------------------------------------------------
+'2020-01-01' | 101 | 1001 | 'page' | TRUE
+'2020-01-01' | 101 | 1002 | 'event' | FALSE
+'2020-01-01' | 101 | 1003 | 'event' | FALSE
+'2020-01-01' | 101 | 1004 | 'group' | FALSE
+
+
+Over the last 7 days, how many users made more than 10 searches?
+
+You notice that the number of users that clicked on a search result
+about a Facebook Event increased 10% week-over-week. How would you
+investigate? How do you decide if this is a good thing or a bad thing?
+
+The Events team wants to up-rank Events such that they show up higher
+in Search. How would you determine if this is a good idea or not?
+Got an unpleasant past experience and inadequate feedback when interviewing with Facebook a few years back. This year got spammed by managers and HRs everywhere for about a month. Decided to give it a try again.
+
+Eventually: “Despite a ton of positive feedback you didn’t hit the bar.”
+
+Waste of time, people.
+
+Continue Reading
+Interview Questions
+Remove k-th element from the back of linked list.
+Answer Question
+A task for a cycling sort.
+Answer Question
+Avg sum of level-by-level in a binary tree. (BFS traversal)
+Answer Question
+out of given N 2d points return K points which are closest to the center of coordinates in 2d plane. (maxHeap)
+Answer Question
+Design Amazon rating and recommendation system.
+Answer Question
+Design ad click registration system
+Answer Question
+19 people found this interview helpful
+
+Helpful
+
+Share
+
+Report
+4 Mar 2022
+
+Technical Program Manager Interview
+Anonymous Interview Candidate
+
+No Offer
+Positive Experience
+Average Interview
+Application
+I applied online. I interviewed at Meta
+
+Interview
+Technical project retrospective, where you'll be asked to deep dive into the technical aspects of past programs you've managed.
+Architecture and system design, where you'll have to design a large scale system from scratch to test your architecture skills.
+Program sense, where you'll be tested on your program management and execution acumen.
+Partnership, where you'll need to demonstrate your ability to work efficiently with cross-functional teams (e.g. engineering, product, etc.)
+Leadership / Collaboration, where you'll need to show you've successfully led teams in the past (e.g. motivate, resolve conflict, etc.)
+
+Continue Reading
+Interview Questions
+Tell me about a project you managed end-to-end
+Tell me about the architecture design and technical details for that project
+Tell me about how you managed technical dependencies and tradeoffs for that project
+Tell me about how you managed technical risks for that project
+Tell me about how you managed resource planning for that project
+Answer Question
+16 people found this interview helpful
+
+Helpful
+
+Share
+
+Report
+11 Feb 2022
+
+Data Engineer Interview
+Anonymous Employee in New York, NY
+
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+I applied through an employee referral I interviewed at Meta (New York, NY) in Feb 2022
+
+Interview
+I started with a referral from a friend and got a call about a week later with the recruiter around the beginning of December, which was asking me to tell her about myself and telling me about the role. No technical questions were asked, but from what I've seen they do sometimes ask but they'll usually be general questions like "what's the difference between UNION and UNION ALL".
+
+I took the technical screening around 2 weeks after, which was just 5 Python and 5 SQL questions in 50 minutes or so. They don't expect you to do all of them, and most people should be fine with 3-4 Python and SQL questions solved. 3 is considered a bit borderline, though. My interviewer seemed a bit distracted, and one of my Python solutions hinged on a super obscure Python function that he kept hinting at but that I'd never heard of. Granted, in retrospect that particular issue could be solved easily with a different approach in Python but I felt tunnel visioned by the hints.
+
+I got the news that I had passed a few days later, and I had the Full Loop scheduled for early February. Seemed like a long gap, but I wanted to make sure I could properly prepare and the recruiter was very willing to accommodate for that. They provide you with a super comprehensive overview of each portion of the interview along with a lot of preparation material, and really seems like they want you to succeed. I prepared by going through all the material supplemented with Youtube videos on product sense and reading the Data Warehouse Toolkit by Kimball for data modeling. You only really need chapters 1 and 2, though. All of the interviewers were really nice, were willing to help if I got stuck, and sometimes it really felt more like discussing/brainstorming with them rather than being interviewed. They were all also excited to talk about their jobs, provided you had any time left over from each round.
+
+The whole process was super transparent and took around 2 months, but mine was definitely on the longer side since it was slowed down by taking place at the end of the year and I had to reschedule an interview at one point. They got back to me after the full loop interview within half a week.
+
+Continue Reading
+Interview Questions
+Phone interview questions are just 5 Python and 5 SQL questions. Don't exactly remember the exact questions but it's going to be Leetcode easy for Python and medium-hard for SQL and in the same vein as the ones other people have posted.
+
+Can't disclose questions for the full loop due to an NDA.
+Answer Question
+24 people found this interview helpful
+
+Helpful
+
+Share
+
+Report
+28 Apr 2022
+
+Software Support Developer Interview
+Anonymous Interview Candidate
+
+No Offer
+Positive Experience
+Average Interview
+Application
+I interviewed at Meta
+
+Interview
+The technical round for meta was rather straight-forward, living coding of one or two medium difficulty leetcode questions. Asked about how the role was and how interviewee can contribute at the specified role
+
+Interview Questions
+Medium leet-code difficulty questions were asked
+Answer Question
+1 person found this interview helpful
+
+Helpful
+
+Share
+
+Report
+25 Apr 2022
+
+HRBP Interview
+Anonymous Interview Candidate
+
+No Offer
+Negative Experience
+Easy Interview
+Application
+I applied online. I interviewed at Meta
+
+Interview
+Fast and easy. Scheduling was easy. I had a brief call with the sorcerer for the position where they vetted me with basic questions. Compensation was not shared in this stage.
+
+Interview Questions
+All around DEI and strategy.
+Answer Question
+1 person found this interview helpful
+
+Helpful
+
+Share
+
+Report
+27 Apr 2022
+
+Supply Chain Analyst Interview
+Anonymous Interview Candidate in London, England
+
+No Offer
+Neutral Experience
+Easy Interview
+Application
+I applied through a staffing agency. I interviewed at Meta (London, England)
+
+Interview
+Had interview thought Harvey Nash. They waste time and take forever. Bad service all round. Interview was interesting and chilled . Very open about issues they faced. I was advised 12 month contract by Nash but turns out was only 6
+
+Interview Questions
+Mainly about past experiences abs why I was looking to move. Also would I be comfortable with context work
+Answer Question
+Be the first to find this interview helpful
+
+Helpful
+
+Share
+
+Report
+
+12345
+Viewing 1 - 10 of 9,486 Interviews
+Interviews>Meta
+RSS Feed
+</>Embed
+Popular Careers with Meta Job Seekers
+Software Engineer Intern Career
+JobsSalariesInterviews
+Data Scientist Career
+JobsSalariesInterviews
+Software Engineer Career
+JobsSalariesInterviews
+Researcher Intern Career
+JobsSalariesInterviews
+Program Manager Career
+JobsSalariesInterviews
+Executive Assistant Career
+JobsSalariesInterviews
+Data Analyst Career
+JobsSalariesInterviews
+Research Scientist Career
+JobsSalariesInterviews
+Operations Manager Career
+JobsSalariesInterviews
+Product Designer Career
+JobsSalariesInterviews
+Product Manager Career
+JobsSalariesInterviews
+HR Business Partner Career
+JobsSalariesInterviews
+Data Scientist Intern Career
+JobsSalariesInterviews
+Administrative Assistant Career
+JobsSalariesInterviews
+Network Engineer Career
+JobsSalariesInterviews
+Communications Coordinator Manager Career
+JobsSalariesInterviews
+Marketing Career
+JobsSalariesInterviews
+Client Relationship Manager Career
+JobsSalariesInterviews
+Technical Program Manager Career
+JobsSalariesInterviews
+Project Manager Career
+JobsSalariesInterviews
+
+Work at Meta? Share Your Experiences
+Meta logo
+Meta
+★★★★★
+Click to Rate
+Start your review...
+or
+Add Salary
+Add Interview
+Add Benefits
+Meta Careers
+Cover Image for [employer]
+Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the... – More
+
+Our Mission	Our Mission
+Diversity & Inclusion	Diversity & Inclusion
+Meta Careers	Meta Careers
+Our Principles	Our Principles
+Jobs You May Like
+Meta
+Language Manager, Hindi
+Meta - Gurgaon
+Meta
+Employee Relations Business Partner
+Meta - Gurgaon
+Meta
+Chief Compliance Officer, WhatsApp
+Meta - Gurgaon
+Meta
+Support Account Manager, WhatsApp Business
+Meta - Mumbai
+Meta
+South Asia Lead, Human Rights Policy
+Meta - Gurgaon
+Company Updates
+
+Meta
+109 days ago	CAREERS
+As we say at Meta, feedback is a gift. We’re grateful that so many talented people choose to build their careers here and share their experiences. Check out our reviews here: https://fb.careers/3JJrvcl #MetaCareers
+
+
+
+Meta
+185 days ago	COMPANY NEWS
+Connection is evolving and so are we.
+The metaverse is the next evolution of social connection. Our company’s vision is to help bring the metaverse to life, so we are changing our name to reflect our commitment to this future.
+
+The Metaverse and How We'll Build It Together -- Connect 2021
+The Metaverse and How We'll Build It Together -- Connect 2021
+This year at Connect, we're sharing our vision for the metaverse. For more on Connect 2021, click here: https://www.facebookconnect.com/Welcome (00:00)Social...
+
+
+See AllSee All
+Meta Photos
++ Add Photo
+Meta photo of: VR at Facebook	Meta photo of: Facebookers in Austin get into formation upon learning that we're #1 in tech on the Glassdoor best places to work list!	Meta photo of: Facebookers at our Menlo Park HQ celebrate being #1 in tech on the Glassdoor best places to work list!
+See All Photos
+Job Seekers Also Viewed
+Previous
+Next
+Apple
+4.2 ★
+30,371 Reviews
+Compare
+
+Amazon
+3.9 ★
+122,833 Reviews
+Compare
+
+Google
+4.5 ★
+31,666 Reviews
+Compare
+
+Twitter
+4.2 ★
+1,540 Reviews
+Compare
+
+Glassdoor has millions of jobs plus salary information, company reviews, and interview questions from people on the inside making it easy to find a job that’s right for you.
+
+Glassdoor
+About / Press
+Blog
+Grievance Officer - India
+Employers
+Get a FREE Employer Account
+Employer Centre
+Post a Job
+Community
+Help / Contact Us
+Guidelines
+Terms of Use
+Privacy & Cookies (New)
+Privacy Center
+Do Not Sell My Personal Information
+Cookie Consent Tool
+Work With Us
+Advertisers
+Developers
+Careers
+Download the App
+Browse by:
+Companies
+Jobs
+Locations
+Copyright © 2008-2022, Glassdoor, Inc. "Glassdoor" and logo are registered trademarks of Glassdoor, Inc
+
